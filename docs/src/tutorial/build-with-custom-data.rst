@@ -41,35 +41,42 @@ We will retrieve 10 sequences from GISAID's EpiCoV database.
       :width: 200
       :alt: GISAID login
 
-3. Select "EpiCoV" from the top navigation bar.
+3. In the top left navigation bar, select **EpiCoV** then **Search**.
 
-   .. image:: ../images/gisaid-navigation-bar.png
+   .. image:: ../images/gisaid-epicov-search.png
       :width: 400
-      :alt: GISAID navigation bar
+      :alt: GISAID EpiCoV Search
 
-4. Select "Search" from the EpiCoV navigation bar.
-
-   .. image:: ../images/gisaid-epicov-navigation-bar.png
-      :width: 400
-      :alt: GISAID EpiCov navigation bar
-
-5. Select the first 10 records.
+4. Select the first 10 records.
 
    .. note::
 
       You can filter and select a different set of records here, but note that more records will take the workflow longer to run, and the GISAID web interface has a maximum of 5,000 records per download.
 
-6. Select **Download** in the bottom right of the search results.
-7. Select **Input for the Augur pipeline** as the download format.
-8. Select **Download**.
-9. Extract the downloaded ``.tar`` file, which contains two files, one ending with ``.metadata.tsv`` and another with ``.sequences.fasta``.
-10. Move these extracted files to the ``data/`` directory in the ``ncov/`` directory.
-11. Rename the files as ``custom.metadata.tsv`` and ``custom.sequences.fasta``.
+   .. image:: ../images/gisaid-select-records.png
+      :width: 700
+      :alt: GISAID EpiCoV Search
+
+5. Select **Download** in the bottom right of the search results.
+6. Select **Input for the Augur pipeline** as the download format.
+7. Select **Download**.
+
+   .. image:: ../images/gisaid-augur-pipeline-download.png
+      :width: 400
+      :alt: GISAID EpiCoV Search
+
+   .. note::
+
+      You may see different download options, but it is fine as long as **Input for the Augur pipeline** is available.
+
+8. Extract by opening the downloaded ``.tar`` file in your file explorer. It contains two files: one ending with ``.metadata.tsv`` and another with ``.sequences.fasta``.
+9.  Move these extracted files to the ``data/`` directory in the ``ncov/`` directory.
+10. Rename the files as ``custom.metadata.tsv`` and ``custom.sequences.fasta``.
 
 Run the workflow
 ----------------
 
-From within the ``ncov/`` directory, run the ``ncov`` workflow using a pre-written ``--configfile``.
+From within the ``ncov/`` directory, run the ``ncov`` workflow using a pre-written ``--configfile``:
 
 .. code:: text
 
@@ -110,4 +117,7 @@ Run this command to view the results in :term:`docs.nextstrain.org:Auspice`:
 
    nextstrain view auspice/
 
-Navigate to ``http://127.0.0.1:4000/ncov/reference-with-custom-data``.
+Navigate to ``http://127.0.0.1:4000/ncov/reference-with-custom-data``. The resulting :term:`docs.nextstrain.org:dataset` should have similar phylogeny to the previous dataset, with additional sequences:
+
+.. figure:: ../images/build-with-custom-data.png
+   :alt: Phylogenetic tree from the "build with reference data" tutorial section as visualized in Auspice

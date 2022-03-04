@@ -26,7 +26,7 @@ Setup
 
       cd ncov
 
-3. Download the example tutorial repository
+3. Download the example tutorial repository into a new directory ``ncov-tutorial/``:
 
    .. code:: text
 
@@ -37,7 +37,7 @@ Setup
 Run the workflow
 ----------------
 
-Run a basic workflow with example data.
+From within the ``ncov/`` directory, run the ``ncov`` workflow using a configuration file provided in the tutorial directory:
 
 .. code:: text
 
@@ -80,7 +80,7 @@ Run this command to view the results in :term:`docs.nextstrain.org:Auspice`:
 
    nextstrain view auspice/
 
-Navigate to ``http://127.0.0.1:4000/ncov/default-build``. The resulting phylogeny should look something like this:
+Navigate to ``http://127.0.0.1:4000/ncov/default-build``. The resulting :term:`docs.nextstrain.org:dataset` should show a phylogeny of ~200 sequences:
 
 .. figure:: ../images/build-with-reference-data.png
    :alt: Phylogenetic tree from the "build with reference data" tutorial section as visualized in Auspice
