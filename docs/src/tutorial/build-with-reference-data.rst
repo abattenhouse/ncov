@@ -87,4 +87,4 @@ Navigate to ``http://127.0.0.1:4000/ncov/default-build``. The resulting phylogen
 
 .. note::
 
-   You can also view the results via a drag-and-drop interface provided by `auspice.us <https://auspice.us>`__.
+   You can also view the results by dragging the file ``auspice/ncov_default-build.json`` onto `auspice.us <https://auspice.us>`__.
