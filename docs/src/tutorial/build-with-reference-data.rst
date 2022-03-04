@@ -82,10 +82,8 @@ Run this command to view the results in :term:`docs.nextstrain.org:Auspice`:
 
 Navigate to ``http://127.0.0.1:4000/ncov/default-build``. The resulting phylogeny should look something like this:
 
-.. figure:: ../images/getting-started-tree.png
-   :alt: Phylogenetic tree from the “getting started” build as visualized in Auspice
-
-   Phylogenetic tree from the “getting started” build as visualized in Auspice
+.. figure:: ../images/build-with-reference-data.png
+   :alt: Phylogenetic tree from the "build with reference data" tutorial section as visualized in Auspice
 
 .. note::
 
