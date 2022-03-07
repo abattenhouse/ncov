@@ -51,7 +51,7 @@ The workflow can take several minutes to run. While it is running, you can learn
 - ``nextstrain build .``
    - This tells the :term:`docs.nextstrain.org:Nextstrain CLI` to :term:`build <docs.nextstrain.org:build (verb)>` the workflow from ``.``, the current directory. All subsequent command-line parameters are passed to the workflow manager, Snakemake.
 - ``--cores 4``
-   - This required Snakemake parameter specifies the number of CPU cores to use. More info `here <https://snakemake.readthedocs.io/en/stable/executing/cli.html>`_.
+   - This required Snakemake parameter specifies the number of CPU cores to use (`more info <https://snakemake.readthedocs.io/en/stable/executing/cli.html>`_).
 - ``--configfile ncov-tutorial/build-with-reference-data.yaml``
    - ``--configfile`` is another Snakemake parameter used to configure the ncov workflow.
    - ``ncov-tutorial/build-with-reference-data.yaml`` is a YAML file with contents:

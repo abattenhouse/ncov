@@ -25,7 +25,7 @@ Curate data from GISAID
 
 .. warning::
 
-   This section requires a GISAID account. If you do not have an account yet, register `here <https://www.gisaid.org/registration/register/>`__. However, registration may take a few days. Follow `alternative data prep methods <../guides/data-prep.html>`__ if you wish to continue this tutorial in the meantime.
+   This section requires a GISAID account. `Register <https://www.gisaid.org/registration/register/>`__ if you do not have an account yet. However, registration may take a few days. Follow `alternative data prep methods <../guides/data-prep.html>`__ if you wish to continue this tutorial in the meantime.
 
 We will retrieve 10 sequences from GISAID's EpiCoV database.
 
