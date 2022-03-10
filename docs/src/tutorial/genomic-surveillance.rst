@@ -9,4 +9,4 @@ In this tutorial section, you will replace the example reference data with custo
 Prerequisites
 -------------
 
-1. :doc:`build-with-custom-data`. These instructions will create the build to be modified in this section.
+1. :doc:`custom-data`. These instructions will create the build to be modified in this section.

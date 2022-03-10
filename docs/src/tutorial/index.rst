@@ -10,7 +10,7 @@ These tutorial pages will guide you to create a :term:`Nextstrain build <docs.ne
    :caption: Table of contents
 
    setup
-   build-with-reference-data
-   build-with-custom-data
-   build-for-genomic-surveillance
+   example-data
+   custom-data
+   genomic-surveillance
    running

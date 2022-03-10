@@ -9,7 +9,7 @@ In this tutorial section, you will add custom focal data to the build with the e
 Prerequisites
 -------------
 
-1. :doc:`build-with-reference-data`. These instructions will set up the command line environment used in this section.
+1. :doc:`example-data`. These instructions will set up the command line environment used in this section.
 
 Setup
 -----
